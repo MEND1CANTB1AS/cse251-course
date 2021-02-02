@@ -8,6 +8,7 @@ Purpose: Team Activity:
 
 Instructions:
 
+- You can't use any thread or process pools
 - Try to speed up this program
     - you can use threads or processes
     - you can change the Board class
@@ -51,7 +52,6 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
-
 
 class Board():
 
@@ -155,24 +155,38 @@ class Board():
                         return True
         return False
 
+    # def run(self):
+    #     with mp.Pool(8) as p:
+    #         p.map(self.find_word, words)
 
 def main():
     board = Board(25)
     board.place_words(words)
-    print('Board with placed words')
     board.display()
     board.fill_in_dots()
     board.display()
 
     start = time.perf_counter()
+
+    queue = mp.Queue()
+
+    p_list = []
+
     for word in words:
-        if not board.find_word(word):
-            print(f'Error: Could not find "{word}"')
+        p = mp.process
+        mp.Process(board.find_word, (word, queue))
+        
+
+    # with mp.Pool(8) as p:
+    #     p.map(board.find_word, (words, queue))
+    # for word in words:
+    #     if not board.find_word(word):
+    #         print(f'Error: Could not find "{word}"')
     total_time = time.perf_counter() - start
 
     board.display()
     print(f'Time to find words = {total_time}')
 
-
 if __name__ == '__main__':
     main()
+    

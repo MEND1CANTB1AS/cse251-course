@@ -31,7 +31,14 @@ from cse251 import *
 class Request_thread(threading.Thread):
     # TODO - Add code to make an API call and return the results
     # https://realpython.com/python-requests/
-    pass
+    def __init__(self, url):
+        threading.Thread.__init__(self)
+
+        self.url = url
+
+    def run(self):
+        response = requests.get(self.url)
+        self.response = response.json()    
 
 class Deck:
 
@@ -43,11 +50,20 @@ class Deck:
 
     def reshuffle(self):
         # TODO - add call to reshuffle
-        pass
+        url = f'https://deckofcardsapi.com/api/deck/{self.id}/shuffle/'
+        request_thread = Request_thread(url)
+        request_thread.start()
+        request_thread.join()
+        #requests.get(f'https://deckofcardsapi.com/api/deck/{self.deck_id}/shuffle/')
 
     def draw_card(self):
         # TODO add call to get a card
-        pass
+        url = f'https://deckofcardsapi.com/api/deck/{self.id}/draw/?count=1'
+        request_thread = Request_thread(url)
+        request_thread.start()
+        request_thread.join()
+        return request_thread.response.cards(0)
+        
 
     def cards_remaining(self):
         return self.remaining
@@ -66,7 +82,7 @@ if __name__ == '__main__':
     #        team_get_deck_id.py program once. You can have
     #        multiple decks if you need them
 
-    deck_id = 'ENTER ID HERE'
+    deck_id = '2itlbxyzg1gm'
 
     # Testing Code >>>>>
     deck = Deck(deck_id)
@@ -80,3 +96,16 @@ if __name__ == '__main__':
     # (ie., war, 31, UNO, etc...)
     # you can run the program "temp_get_deck_id.py" to get multiple decks
     # if you need them.
+
+    while True:
+        print('Press any key to start the game\n')
+        input()
+        deck = Deck(deck_id)
+        user1 = deck.draw_card()
+        user2 = deck.draw_card()
+        if user1.value > user2:
+            print('User 1 Won')
+        else if user2.value > user1:
+            print('User 2 Won')
+        else:
+            print('No one won')

@@ -7,7 +7,6 @@ Purpose: Common classes for the cse 251 course
 
 """
 
-import os
 import time
 import logging
 from datetime import datetime
@@ -17,19 +16,10 @@ import json
 
 # ===============================================================================================
 def print_dict(dict, title=''):
-    """ Display a dictionary in a structured format """
-    if title != '':
-        print(f'Dictionary: {title}')
-    print(json.dumps(dict, indent=3))
-
-# ===============================================================================================
-def load_json_file(filename):
-    if os.path.exists(filename):
-        with open(filename) as json_file: 
-            data = json.load(json_file)
-        return data
-    else:
-        return {}
+	""" Display a dictionary in a structured format """
+	if title != '':
+		print(f'Dictionary: {title}')
+	print(json.dumps(dict, indent=3))
 
 
 # ===============================================================================================
@@ -107,15 +97,6 @@ class Log():
             self.write(f'{message} = {t:0.8f}')
         return t
 
-    def get_time(self):
-        return time.perf_counter()
-
-    def write_blank_line(self):
-        """Write info message to log file"""
-        self.logger.info(' ')
-        # if self._show_terminal:
-        #   print(f'LOG: {message}')
-
     def write(self, message=''):
         """Write info message to log file"""
         self.logger.info(message)
@@ -124,13 +105,13 @@ class Log():
 
     def write_warning(self, message=''):
         """Write warning message to log file"""
-        self.logger.warning('WARNING: ' + message)
+        self.logger.warning(message)
         # if self._show_terminal:
         #   print(f'LOG: {message}')
 
     def write_error(self, message=''):
         """Write error message to log file"""
-        self.logger.error('ERROR: ' + message)
+        self.logger.error(message)
         # if self._show_terminal:
         #   print(f'LOG: {message}')
 

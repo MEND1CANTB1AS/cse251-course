@@ -20,11 +20,6 @@ This assignment will contain two threaded classes.  A `Factory` will create cars
    - **Dealer**: This is the dealership retrieves cars created by the factory to be sold. After a car is received, the dealership uses a short delay to seel the car.  The dealership only has room for 10 cars, therefore, if the dealership is full, the factory must until a car is sold before creating another car.
 4. Your goal is to create `CARS_TO_PRODUCE` many cars.
 
-Sample plot created by your program.  Before the Dealership takes a car from the queue, it uses `qsize()` to get the size of the queue and updates the `queue_stats` list.
-
-![](plot.png)
-
-
 ## Rubric
 
 Assignments are not accepted late. Instead, you should submit what you have completed by the due date for partial credit.
@@ -36,7 +31,8 @@ The Assignment will be graded in broad categories according to the following:
 | 50% | Some attempt made |
 | 75% | Developing (but significantly deficient) |
 | 85% | Slightly deficient |
-| 93% - 100% | Meets requirements / Showed creativity and extend your assignments beyond the minimum standard that is specifically required |
+| 93% | Meets requirements |
+| 100% | Showed creativity and extend your assignments beyond the minimum standard that is specifically required |
 
 ## Submission
 

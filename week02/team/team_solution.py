@@ -1,9 +1,9 @@
+
 """
 Course: CSE 251
 Lesson Week: 02 - Team Activity
 File: team.py
 Author: Brother Comeau
-
 Purpose: Playing Card API calls
 """
 
@@ -75,7 +75,7 @@ if __name__ == '__main__':
     #        team_get_deck_id.py program once. You can have
     #        multiple decks if you need them
 
-    deck_id = 'ENTER ID HERE'
+    deck_id = '2itlbxyzg1gm'
 
     deck = Deck(deck_id)
 
