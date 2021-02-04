@@ -23,9 +23,8 @@ import os, sys
 sys.path.append('../../code')
 from cse251 import *
 
-PRIME_PROCESS_COUNT = 3
-END_OF_NUMBERS = None
-
+PRIME_PROCESS_COUNT = 1
+END_OF_NUMBERS = 'END'
 
 def is_prime(n: int) -> bool:
     """Primality test using 6k+-1 optimization.
@@ -42,34 +41,22 @@ def is_prime(n: int) -> bool:
         i += 6
     return True
 
-
 # TODO create read_thread function
 def read_file(queue, sem):
-    #file1 = open('data.txt', 'r')
     with open('data.txt') as file1:
         for line in file1:
-            sem.release()
             queue.put(int(line))
-        # while True:
-        #     line = file1.readline()
-        #     if not line:
-        #         break
-        #     sem.release()
-        #     queue.put(int(line))
-        
-        for i in range(PRIME_PROCESS_COUNT):
-            queue.put(END_OF_NUMBERS)
-            sem.release()
 
+    for i in range(PRIME_PROCESS_COUNT):
+        queue.put(END_OF_NUMBERS)
 
 # TODO create prime_process function
-def process_prime(sem, queue, p_list):
+def process_prime(queue, p_list):
     while True:
-        sem.acquire()
         val = queue.get()
         if val == END_OF_NUMBERS:
             break
-
+        
         if(is_prime(val)):
             p_list.append(val)
 
@@ -90,21 +77,26 @@ def main():
     log.start_timer()
 
     # TODO Create shared data structres
-    file_semaphore = threading.Semaphore()
+    file_semaphore = threading.Semaphore(0)
     initial_queue = mp.Queue()
     primes = mp.Manager().list()
+
     # TODO create reading thread
     reader = threading.Thread(target=read_file, args=(initial_queue, file_semaphore))
     # TODO create prime processes
-    prime_processes = [mp.Process(target=process_prime, args=(initial_queue, file_semaphore, primes)) for i in range(PRIME_PROCESS_COUNT)]
+    prime_processes = [mp.Process(target=process_prime, args=(initial_queue, primes)) for i in range(PRIME_PROCESS_COUNT)]
+
+    
     # TODO Start them all
     reader.start()
     for p in prime_processes:
         p.start()
+    
     # TODO wait for them to complete
     reader.join()
     for p in prime_processes:
         p.join()
+
     log.stop_timer(f'All primes have been found using {PRIME_PROCESS_COUNT} processes')
 
     # display the list of primes
