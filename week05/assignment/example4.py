@@ -7,6 +7,7 @@ def process_function(process_id, data):
 
 def main():    
     # Create a value with each thread
+    # data = [0] * 3      # [0, 0 ,0]
     data = mp.Manager().list([0] * 3)
 
     # Create 3 processes, pass a "process_id" for each thread

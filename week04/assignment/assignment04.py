@@ -95,8 +95,7 @@ class Dealer(threading.Thread):
         while True:
             # TODO process a car if there is one
             if car_queue.qsize() > 0:
-                if car_queue.qsize() > 0:
-                    queue_stats[car_queue.qsize() - 1] += 1
+                queue_stats[car_queue.qsize() - 1] += 1
                 car_queue.get()
                 self.cars_sold += 1
             if self.cars_sold == self.cars_to_sell:
