@@ -218,7 +218,7 @@ class Wrapper(mp.Process):
                 else:
                     f.close()
                     print("Done Wrapping")
-                    return
+                    return self.gift_count
                     
 
 def display_final_boxes(filename, log):
@@ -263,7 +263,8 @@ def main():
     parent_assembler, child_wrapper = mp.Pipe()
 
     # TODO create variable to be used to count the number of gifts
-
+    gift_count = 0
+    
     # delete final boxes file
     if os.path.exists(BOXES_FILENAME):
         os.remove(BOXES_FILENAME)
@@ -292,7 +293,8 @@ def main():
     display_final_boxes(BOXES_FILENAME, log)
 
     # TODO Log the number of gifts created.
-
+    for line in open(BOXES_FILENAME): gift_count += 1
+    print("Gifts Created: ", gift_count)
 
 
 if __name__ == '__main__':
