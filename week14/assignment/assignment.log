@@ -1,0 +1,164 @@
+23:35:49| Depth-First
+23:36:33| 44.25767910
+23:36:33| Tree Display
+23:36:33| Family id: 5009446484
+23:36:33|   Husband: Anthony, 22-11-1822
+23:36:33|   Wife: Ellie, 19-9-1881
+23:36:33|   Husband Parents: Logan and Madison
+23:36:33|   Wife Parents: None
+23:36:33|   Children: Asher, Dylan, Hannah, Samuel, Jackson, James, Ella
+23:36:33| Family id: 5018885909
+23:36:33|   Husband: Logan, 1-10-1981
+23:36:33|   Wife: Madison, 20-7-1904
+23:36:33|   Husband Parents: Levi and Grace
+23:36:33|   Wife Parents: Aiden and Sofia
+23:36:33|   Children: John, Elizabeth, Everly, Anthony
+23:36:33| Family id: 5028316374
+23:36:33|   Husband: Levi, 23-3-1835
+23:36:33|   Wife: Grace, 29-7-1780
+23:36:33|   Husband Parents: Mateo and Addison
+23:36:33|   Wife Parents: Dylan and Mia
+23:36:33|   Children: Olivia, Jayden, Emma, Olivia, Oliver, Sebastian, Logan
+23:36:33| Family id: 4970646935
+23:36:33|   Husband: Mateo, 10-10-1998
+23:36:33|   Wife: Addison, 11-3-1883
+23:36:33|   Husband Parents: Wyatt and Charlotte
+23:36:33|   Wife Parents: Ethan and Mia
+23:36:33|   Children: Luke, Emily, James, Gabriel, Mia, Natalie, Jacob, Levi
+23:36:33| Family id: 4980094288
+23:36:33|   Husband: Wyatt, 12-1-1803
+23:36:33|   Wife: Charlotte, 29-10-1806
+23:36:33|   Husband Parents: James and Evelyn
+23:36:33|   Wife Parents: Theodore and Ellie
+23:36:33|   Children: Victoria, Theodore, Riley, Sebastian, Mateo
+23:36:33| Family id: 4989532689
+23:36:33|   Husband: James, 11-7-1853
+23:36:33|   Wife: Evelyn, 22-9-1842
+23:36:33|   Husband Parents: None
+23:36:33|   Wife Parents: None
+23:36:33|   Children: John, Luna, Emilia, Liam, Aurora, Samuel, Zoey, Wyatt
+23:36:33| Family id: 4998964178
+23:36:33|   Husband: Theodore, 7-11-1965
+23:36:33|   Wife: Ellie, 5-3-1866
+23:36:33|   Husband Parents: None
+23:36:33|   Wife Parents: None
+23:36:33|   Children: Mason, Leah, Madison, Joshua, Michael, Charlotte
+23:36:33| Family id: 5075511443
+23:36:33|   Husband: Ethan, 29-11-1875
+23:36:33|   Wife: Mia, 3-10-1885
+23:36:33|   Husband Parents: Asher and Leah
+23:36:33|   Wife Parents: William and Penelope
+23:36:33|   Children: Addison
+23:36:33| Family id: 5084958812
+23:36:33|   Husband: Asher, 21-8-1825
+23:36:33|   Wife: Leah, 25-11-1993
+23:36:33|   Husband Parents: None
+23:36:33|   Wife Parents: None
+23:36:33|   Children: Mason, Aria, Lucy, John, Aria, Ethan
+23:36:33| Family id: 5094398237
+23:36:33|   Husband: William, 26-6-1960
+23:36:33|   Wife: Penelope, 15-7-2018
+23:36:33|   Husband Parents: None
+23:36:33|   Wife Parents: None
+23:36:33|   Children: Everly, Violet, Oliver, Liam, Everly, Luke, Oliver, Mia
+23:36:33| Family id: 5036728030
+23:36:33|   Husband: Dylan, 20-1-1982
+23:36:33|   Wife: Mia, 18-1-2001
+23:36:33|   Husband Parents: Ethan and Willow
+23:36:33|   Wife Parents: Isaac and Leah
+23:36:33|   Children: Penelope, Grace
+23:36:33| Family id: 5046159263
+23:36:33|   Husband: Ethan, 6-7-1921
+23:36:33|   Wife: Willow, 14-9-1902
+23:36:33|   Husband Parents: Michael and Ellie
+23:36:33|   Wife Parents: None
+23:36:33|   Children: Olivia, Dylan
+23:36:33| Family id: 5055598424
+23:36:33|   Husband: Michael, 13-3-1984
+23:36:33|   Wife: Ellie, 27-6-1787
+23:36:33|   Husband Parents: None
+23:36:33|   Wife Parents: None
+23:36:33|   Children: Jaxon, Thomas, Wyatt, Ethan
+23:36:33| Family id: 5065045017
+23:36:33|   Husband: Isaac, 12-9-2009
+23:36:33|   Wife: Leah, 14-6-1936
+23:36:33|   Husband Parents: Mason and Mia
+23:36:33|   Wife Parents: Josiah and Luna
+23:36:33|   Children: Anthony, Samuel, Gabriel, Mia
+23:36:33| Family id: 4873158106
+23:36:33|   Husband: Mason, 12-5-1792
+23:36:33|   Wife: Mia, 9-9-1767
+23:36:33|   Husband Parents: None
+23:36:33|   Wife Parents: None
+23:36:33|   Children: Sebastian, Josiah, Jack, Benjamin, Luna, Emilia, Evelyn, Isaac
+23:36:33| Family id: 4882588315
+23:36:33|   Husband: Josiah, 20-8-1764
+23:36:33|   Wife: Luna, 3-6-1862
+23:36:33|   Husband Parents: None
+23:36:33|   Wife Parents: None
+23:36:33|   Children: Julian, David, Luke, Ella, Ezra, Bella, Leah
+23:36:33| Family id: 4892027460
+23:36:33|   Husband: Aiden, 26-8-1941
+23:36:33|   Wife: Sofia, 6-1-1765
+23:36:33|   Husband Parents: William and Olivia
+23:36:33|   Wife Parents: None
+23:36:33|   Children: Jackson, Bella, Sophia, Charlotte, Joseph, Levi, Madison
+23:36:33| Family id: 4834366213
+23:36:33|   Husband: William, 7-3-1836
+23:36:33|   Wife: Olivia, 30-4-1889
+23:36:33|   Husband Parents: Sebastian and Addison
+23:36:33|   Wife Parents: Benjamin and Sophia
+23:36:33|   Children: Madison, David, Aiden
+23:36:33| Family id: 4843804870
+23:36:33|   Husband: Sebastian, 28-5-1885
+23:36:33|   Wife: Addison, 24-12-1829
+23:36:33|   Husband Parents: None
+23:36:33|   Wife Parents: Jack and Natalie
+23:36:33|   Children: Harper, Aria, Lily, Isaac, William
+23:36:33| Family id: 4853236103
+23:36:33|   Husband: Jack, 19-12-1916
+23:36:33|   Wife: Natalie, 28-10-1886
+23:36:33|   Husband Parents: None
+23:36:33|   Wife Parents: None
+23:36:33|   Children: Joseph, Hudson, Lucy, Amelia, Addison
+23:36:33| Family id: 4862675264
+23:36:33|   Husband: Benjamin, 3-4-1947
+23:36:33|   Wife: Sophia, 13-12-1995
+23:36:33|   Husband Parents: Andrew and Lily
+23:36:33|   Wife Parents: Julian and Abigail
+23:36:33|   Children: Layla, Ezra, Ezra, Lucy, Josiah, Lucy, Liam, Olivia
+23:36:33| Family id: 4939222529
+23:36:33|   Husband: Andrew, 24-10-1809
+23:36:33|   Wife: Lily, 22-4-1798
+23:36:33|   Husband Parents: None
+23:36:33|   Wife Parents: None
+23:36:33|   Children: Lily, Theodore, Jacob, Theodore, Mia, Julian, Emily, Alexander, Benjamin
+23:36:33| Family id: 4948670402
+23:36:33|   Husband: Julian, 17-5-1774
+23:36:33|   Wife: Abigail, 23-8-1881
+23:36:33|   Husband Parents: None
+23:36:33|   Wife Parents: None
+23:36:33|   Children: Emily, Sophia
+23:36:33| 
+Tree Stats:
+Number of people                    : 150
+Number of families                  : 23
+Max generations                     : 6
+People connected to starting family : 150
+
+23:36:33| total_time                   : 44.2576791
+23:36:33| People and families / second : 3.9089261687018744
+23:36:33| 
+23:36:33| Breadth-First
+23:36:33| 0.00024540
+23:36:34| Tree Display
+23:36:34| 
+Tree Stats:
+Number of people                    : 0
+Number of families                  : 0
+Max generations                     : 0
+People connected to starting family : 0
+
+23:36:34| total_time      : 0.00024539999999717566
+23:36:34| People / second : 0.0
+23:36:34| 
